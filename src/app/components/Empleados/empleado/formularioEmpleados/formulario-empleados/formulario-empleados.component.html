@@ -2,29 +2,29 @@
     <div class="">
         <h3>Empleados</h3>
     </div>
-    <form formGroup="formulario" (ngSubmit)="onClickGuardar()">
+    <form [formGroup]="formulario" (ngSubmit)="onClickGuardar()">
         <div>
-            <label for="">Nombre</label>
-            <input type="Nombre" class="" formControl="Nombre">
+            <label class="label" for="Nombre">Nombre: <br></label>
+            <input type="Nombre" class="" formControl="Nombre"> <br>
         </div>
         <div>
-            <label for="">Apellido Paterno</label>
-            <input type="ApellidoPaterno" class="" formControl="ApellidoPaterno">
+            <label class="label" for="ApellidoPaterno">Apellido Paterno: <br></label>
+            <input type="ApellidoPaterno" class="" formControl="ApellidoPaterno"> <br>
         </div>
         <div>
-            <label for="">Apellido Materno</label>
-            <input type="ApellidoMaterno" class="" formControl="ApellidoMaterno">
+            <label class="label" for="ApellidoMaterno">Apellido Materno: <br></label>
+            <input type="ApellidoMaterno" class="" formControl="ApellidoMaterno"> <br>
         </div>
         <div>
-            <label for="">RFC</label>
-            <input type="RFC" class="" formControl="RFC">
+            <label class="label" for="RFC">RFC: <br></label>
+            <input type="RFC" class="" formControl="RFC"> <br>
         </div>
         <div>
-            <label for="">Telefono</label>
-            <input type="Telefono" class="" formControl="Telefono">
+            <label class="label" for="Telefono">Telefono: <br></label>
+            <input type="Telefono" class="" formControl="Telefono"> <br>
         </div>
-        <div class="">
-            <button class="boton-nuevo" type="submit">Guardar</button>
+        <div>
+            <br><button class="guardar" type="submit">Guardar</button>
         </div>
     </form>
 </div>
