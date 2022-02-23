@@ -2,10 +2,7 @@
     <div class="">
         <h3>Empleados</h3>
     </div>
-    <div class="">
-        <button class="boton-nuevo" type="button" (click)="onClickGuardar()">Guardar</button>
-    </div>
-    <form [formGroup]="empleados" (ngSubmit)="onClickGuardar()">
+    <form formGroup="formulario" (ngSubmit)="onClickGuardar()">
         <div>
             <label for="">Nombre</label>
             <input type="Nombre" class="" formControl="Nombre">
@@ -14,6 +11,20 @@
             <label for="">Apellido Paterno</label>
             <input type="ApellidoPaterno" class="" formControl="ApellidoPaterno">
         </div>
-        <button type="submit" class="">Guardar</button>
+        <div>
+            <label for="">Apellido Materno</label>
+            <input type="ApellidoMaterno" class="" formControl="ApellidoMaterno">
+        </div>
+        <div>
+            <label for="">RFC</label>
+            <input type="RFC" class="" formControl="RFC">
+        </div>
+        <div>
+            <label for="">Telefono</label>
+            <input type="Telefono" class="" formControl="Telefono">
+        </div>
+        <div class="">
+            <button class="boton-nuevo" type="submit">Guardar</button>
+        </div>
     </form>
 </div>

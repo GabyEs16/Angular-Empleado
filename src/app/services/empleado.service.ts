@@ -20,11 +20,5 @@ export class EmpleadoService {
     this.empleados.push(empleado);
     console.log(this.empleados)
   }
-  
-  //Metodo para subir una foto
-  subirFotoEmpleado(files: any) {
-    let fileToUpload = <File>files[0];
-    const formData = new FormData();
-    formData.append("file", fileToUpload, fileToUpload.name);
-  }
+
 }
