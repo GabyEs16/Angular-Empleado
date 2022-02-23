@@ -1,1 +1,60 @@
-<p>lista-empleados works!</p>
+<div class="grid">
+    <div class="col-12">
+        <div>
+            <table>
+                <tr>
+                    <th style="width: 3rem;"></th>
+                    <th>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            Nombre
+                        </div>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            ApellidoPaterno
+                        </div>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            ApellidoMaterno
+                        </div>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            RFC
+                        </div>
+                        <div class="p-d-flex p-jc-between p-ai-center">
+                            Telefono
+                        </div>
+                    </th>
+                </tr>
+                <!--
+                    
+                <th>Acciones</th>
+                -->
+            </table>
+            <tbody *ngFor="let item of empleado">
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        {{ item.Nombre }}
+                    </td>
+                    <td>
+                        {{ item.ApellidoPaterno }}
+                    </td>
+                    <td>
+                        {{ item.ApellidoMaterno }}
+                    </td>
+                    <td>
+                        {{ item.RFC}}
+                    </td>
+                    <td>
+                        {{ item.Telefono}}
+                    </td>
+                    <td style="text-align: center">
+                        <!--
+                            <button type="button" pButton pRipple [pRowToggler]="empleado" class="p-button-text p-button-rounded p-button-plain" [icon]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'"></button>
+                        <button type="button" (click)="onClickEditarEmpleado(empleado)" class="boton-grid boton-grid-editar"><img class="img-grid" src="/assets/images/grid-editar.svg" /></button>
+                        <button type="button" (click)="onClickEliminarEmpleado(empleado)" class="boton-grid boton-grid-eliminar"><img class="img-grid" src="/assets/images/grid-eliminar.svg" /></button>
+                   -->
+                    </td>
+                </tr>
+            </tbody>
+        </div>
+    </div>
+</div>

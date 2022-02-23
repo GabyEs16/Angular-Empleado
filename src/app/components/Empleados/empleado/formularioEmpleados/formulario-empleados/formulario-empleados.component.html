@@ -1,1 +1,19 @@
-<p>formulario-empleados works!</p>
+<div class="">
+    <div class="">
+        <h3>Empleados</h3>
+    </div>
+    <div class="">
+        <button class="boton-nuevo" type="button" (click)="onClickGuardar()">Guardar</button>
+    </div>
+    <form [formGroup]="empleados" (ngSubmit)="onClickGuardar()">
+        <div>
+            <label for="">Nombre</label>
+            <input type="Nombre" class="" formControl="Nombre">
+        </div>
+        <div>
+            <label for="">Apellido Paterno</label>
+            <input type="ApellidoPaterno" class="" formControl="ApellidoPaterno">
+        </div>
+        <button type="submit" class="">Guardar</button>
+    </form>
+</div>
